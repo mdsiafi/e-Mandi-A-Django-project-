@@ -1,0 +1,92 @@
+.main-container{
+	
+	margin-left:0px;
+}
+.wrapper {
+    
+    padding-top:0px;
+}
+.content-wrap{
+	padding:0px;
+}
+.image img{
+}
+.image span{
+	
+	list-style:none;
+    color: #808080;
+}
+.box{
+	
+}
+
+.card-background{
+	box-shadow: 0 0.125rem 0.625rem 0 rgba(0,0,0,0.2);
+width: 100%;
+padding: 2.6%;
+height:300px !important;
+}
+#pa{
+	margin-top:30px;
+	
+}
+.item p{
+	margin: 0px;
+    padding: 0px;
+	}
+.para{
+	font-size:18px;
+	margin-top:70px;
+	box-shadow: 0 0.125rem 0.625rem 0 rgba(0,0,0,0.2);
+	text-align:center;
+	color:#808080;
+	min-height: 327px;
+	
+padding-top: 20px;
+}
+.para span{
+	color:red !important;
+}
+.useravatar h4{
+	font-size:20px;
+	
+}
+.contact-card.hovercard .useravatar img {
+	margin-left: 62px;
+margin-top: 15px;
+width: 170px !important;
+max-width: 270px !important;
+height: 170px !important;
+border:2px solid black;
+}
+.hovercard span{
+	color:gray;
+	margin-top:-30px;
+}
+.social{
+	float:right;
+	margin-top:-20px;
+}
+.footer{
+	
+	left:0px;
+}
+
+@media(max-width:766px){
+    .social
+    {
+        margin:0px;
+    }
+    #FullLogin{
+        display:none !important;
+    }
+    #FullSignup{
+        display:none !important;
+    }
+    #ResponsiveLogin{
+        display:block !important;
+    }
+    #ResponsiveSignup{
+        display:block !important;
+    }
+}
