@@ -1,0 +1,322 @@
+{% load staticfiles %}
+﻿{% load static %}
+<html>
+<head>
+<title>@e-Mandi</title>
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/bootstrap.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/abc.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/page-acctivity-timeline.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/lightgallery.min.css' %}">
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/main.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/style-default.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %} ">
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/
+font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQ
+NHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style>
+
+nav {
+            margin-bottom: 0px !important;
+        }
+
+#my_carousel .img-responsive {
+            width: 100%;
+        }
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
+
+
+<div class="main-container">
+
+
+<!-- START: Main Container -->
+
+
+
+
+
+<div class="content-wrap">
+
+
+<!--START: Content Wrap-->
+
+
+
+<div class="row">
+
+
+<div class="col-md-12">
+
+<div class="panel panel-success">
+
+
+
+<style>
+
+.navbar-nav li:hover {
+
+ color: #555;
+    background-color: #e7e7e7;
+
+
+  }
+
+
+</style>
+
+
+
+<div class="panel-heading" style="overflow: hidden;">
+
+<h1 class="panel-title" style="font-size: 40px;float:left;">@e-Mandi</h1>
+
+<ul class="list-inline social" style="margin-top:-8px;margin-bottom:0px;">
+
+<li>
+<a href="{% url 'efarm:login' %}" id="FullLogin" style="display:block;">
+<button type="button" class="btn btn-primary" style="margin-top:8px;margin-left:10px;">Login</button>
+</a>
+
+
+</li>
+
+<li><a href="{% url 'efarm:signup' %}" id="FullSignup" style="display:block;">
+<button type="button" class="btn btn-primary register-btn" style="margin-top:8px;
+margin-left:10px;">Register</button>
+</a></li>
+
+<li><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+<li><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li><a><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+<li><a><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+<li><a><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+</ul>
+
+</div>
+<div class="panel-body no-padding">
+
+
+
+<div class="container-fluid con">
+
+<div class="row main">
+
+<div class="col-md-12 main2" style="margin:0px; padding:0PX;">
+
+
+<div class="carousel" id="my_carousel" data-ride="carousel" data-interval="2000">
+
+
+<ol class="carousel-indicators">
+
+<li class="" data-slide-to="0" data-target="#my_carousel"></li>
+
+<li data-slide-to="1" data-target="#my_carousel" class=""></li>
+
+<li data-slide-to="2" data-target="#my_carousel" class="active"></li>
+
+<li data-slide-to="3" data-target="#my_carousel"></li>
+
+<li data-slide-to="4" data-target="#my_carousel"></li>
+</ol>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.c{
+	background-color:black;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+/* Style the footer */
+</style>
+<!--end of con-->
+<ul class="c">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">About</a></li>
+  <li><a href="#course">Team members</a></li>
+  <li><a href="#contact">Contact-us</a></li>
+</ul>
+
+
+<div class="carousel-inner image">
+
+
+
+<div class="item">
+
+<img src="{% static 'main/1.jpg' %}" class="img-responsive">
+
+</div>
+
+<div class="item active">
+
+<img src="{% static 'main/2.jpg' %}" class="img-responsive">
+
+</div>
+
+<div class="item active">
+
+<img src="{% static 'main/3.jpg' %}" class="img-responsive">
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+<!--end of carousel-->
+
+
+
+</div>
+
+<!--end of main2-->
+
+
+
+</div>
+
+<!--end of main-->
+
+
+
+</div>
+
+<style type="text/css">
+	.cont{
+		width: 60%;
+		height: 100%;
+		float: left;
+		color: black;
+		font-size: 18;
+		padding: 10px;
+	}
+	.pp{
+		width: 100%;
+		height: 60%;
+	}
+</style>
+<div class="pp">
+<div class="cont">
+	<br><br><br><br>
+	<p><strong>e-Mandi:</strong><br>Main objective of this project is to help the farmer as an initiative from the four member. so that they will be able to selll their crop at reasonable cost and with multiple choice of their crops and with the help of this project we will be able to remove third party and their will be only two way communication between farmer and their customer so this will also help to get vegetables,fruits at any place of the country at reasonable cost.</p>
+</div>
+<style type="text/css">
+	.ss{
+		width: 30%;
+		height: 60%;
+		float: right;
+	}
+</style>
+<div class="ss">
+
+
+<div class="container">
+
+<div class="row">
+
+
+
+<div class="col-md-4 col-sm-12">
+
+
+<div class="para">
+
+<center>
+
+<h4><b><u>----News----</u></b></h4>
+
+</center>
+
+<marquee direction="up" style="text-align:center;height:200px;">
+
+<br><br>
+<a href="https/www.google.com/">Farmers are on strikes from 2 to 10:<--:</a>
+
+<br>
+
+<br>
+
+<a href="#">Announcements for the farmers </a>
+<br><br>
+<a href="#">Farmers has destroyed their crops click to know more</a>
+</marquee>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<style>
+.foot{
+	width: 100%;
+	height: 5%;
+	background-color: rgb(5,5,50);
+	color: white;
+	text-align: center;
+}
+</style>
+<div class="foot">
+	<p>visitor count:xxxxx</p>
+</div>
+<script type="text/javascript" src="{% static 'main/jquery-2.2.4.min.js.download' %}"></script>
+
+<script type="text/javascript" src="{% static 'main/jquery-ui.min.js.download' %}"></script>
+
+<script type="text/javascript" src="{% static 'main/bootstrap.min.js.download' %}"></script>
+
+<script type="text/javascript" src="{% static 'main/plugins.js.download' %}"></script>
+
+
+<script type="text/javascript" src="{% static 'main/app.base.js.download' %}"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Add crop{% endblock title %}
+{%  block content %}
+<div style="margin:7%;margin-bottom: 15%;margin-top: 15%;">
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ add_crop.as_p }}
+  <input type="submit">
+</form>
+</div>
+
+{% endblock content %}

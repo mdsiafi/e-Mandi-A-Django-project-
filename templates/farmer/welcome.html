@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Welcome{% endblock title %}
+{% block nav %}
+
+<li >
+  
+    <a target="_self" href="{% url 'efarm:addcrop' %}">Add Crop<span class="sr-only">(current)</span></a>
+                    </li>
+
+{% endblock nav %}
+{%  block content %}
+<div style="margin:7%;margin-bottom:15%;">
+<div class="container-fluid">
+      <div class="row" style="margin-top: 6%">
+        <div class="col-sm-8 blog-main">
+
+        <div class="blog-post">
+            <div class="row">
+                {% for crop in crops %}
+                    <div class="col-md-4">
+                      <div class="thumbnail">
+                          <a href="">
+                              <img src="{{ crop.crop_image.url }}" alt="..." style="height: 130px; width: auto">
+                          </a>
+
+                          <div class="caption">
+                              <h3 class="text-center">
+                                <a class="text-center">{{crop.crop_name}}</a>
+                              </h3>
+                              <h3 class="text-center" style="font-size:20px;">
+                                <a href="{% url 'efarm:edit-crop' crop.id %}" style="padding-right:10px">Edit</a>
+                                <a href="{% url 'efarm:delete_crop' crop.id%}">Delete</a>
+                              </h3>
+                              <p class="text-center">Rs. {{ crop.price }}</p>
+                          </div>
+
+                      </div>
+                    </div>
+                {% endfor %}
+            </div>
+           </div><!-- /.blog-post -->
+          </div><!-- /.blog-main -->
+            <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+                  <div class="sidebar-module">
+                    <h4>Categories</h4>
+
+                  </div>
+            </div><!-- /.blog-sidebar -->
+    </div><!-- /.container -->
+</div>
+</div>
+{% endblock %}
